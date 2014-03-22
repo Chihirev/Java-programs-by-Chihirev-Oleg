@@ -5,6 +5,6 @@ package ru.kpfu.npp.math;
  */
 public interface Matrix {
     int getValue(int row, int column);
-    int setValue(int row, int column, int value);
-    String toString();
+    void setValue(int row, int column, int value);
+
 }

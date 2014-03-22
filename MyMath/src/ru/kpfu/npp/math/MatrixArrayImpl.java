@@ -3,7 +3,7 @@ package ru.kpfu.npp.math;
 /**
  * Created by Zahvat on 15.03.14.
  */
-public class MatrixArrayImpl
+public class MatrixArrayImpl implements Matrix
 {
     private int[][] matrix;
     private static final int MAX_ROWS=30;
@@ -18,7 +18,7 @@ public class MatrixArrayImpl
     }
     //методы доступа
 
-    public int getValue(int row, int column, int value)
+    public int getValue(int row, int column)
     {
         if((row>MAX_ROWS) && (column>MAX_COLUMNS-1))
         {
